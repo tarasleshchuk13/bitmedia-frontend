@@ -1,0 +1,64 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.inputAndSelect {
+    border: 1px solid #F1F1F1;
+    border-radius: 10px;
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+}
+
+.input {
+    flex: 1;
+    min-width: 100px;
+    height: 32px;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    color: #1A1A1A;
+    font-size: 14px;
+    margin: 8px 0;
+    border-right: 1px solid #F1F1F1;
+}
+
+.input::placeholder {
+    font-style: italic;
+    font-size: 14px;
+    color: #979797;
+}
+
+.selectWrap {
+    position: relative;
+}
+
+.select {
+    height: 100%;
+    padding-left: 12px;
+    padding-right: 45px;
+    appearance: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #1A1A1A;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .form {
+        margin-top: 20px;
+    }
+}

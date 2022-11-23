@@ -1,0 +1,35 @@
+.footer {
+    background: #1C3B55;
+    margin-top: 48px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    gap: 40px
+}
+
+.logo {
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.text {
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.text:last-child {
+    white-space: nowrap;
+}
+
+@media (max-width: 575px) {
+    .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

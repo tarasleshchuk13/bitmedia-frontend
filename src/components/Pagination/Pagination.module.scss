@@ -1,0 +1,21 @@
+.pagination {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.arrowButton {
+    background: transparent;
+    padding: 5px 8px;
+    margin: 0 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.dots {
+    color: #1A1A1A;
+    font-size: 25px;
+}

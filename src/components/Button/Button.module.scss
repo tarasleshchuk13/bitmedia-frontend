@@ -1,0 +1,29 @@
+.button, .buttonSecondary {
+    min-width: 48px;
+    height: 48px;
+    background: #3A80BA;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: all .1s ease-in;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 0 7px;
+}
+
+.button:hover {
+    background: rgba(58, 128, 186, 0.87);
+}
+
+.buttonSecondary {
+    background: #fff;
+    border: 2px solid #F1F1F1;
+    color: #1A1A1A;
+}
+
+.buttonSecondary:hover {
+    background: #F1F1F1;
+}
