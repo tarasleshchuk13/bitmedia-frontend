@@ -8,6 +8,15 @@ const Table = ({ transactions }) => {
         )
     }
     
+    function getFormattedDate(date) {
+        const months = [
+            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+        ]
+        
+        return `${months[date.getMonth()]}-${date.getDate()}-${date.getFullYear()}`
+    }
+    
     return (
         <div className={styles.tableWrapper}>
             <table className={styles.table}>
@@ -40,7 +49,7 @@ const Table = ({ transactions }) => {
                         <td className={styles.td}>{transaction.senderAddress}</td>
                         <td className={styles.td}>{transaction.recipientsAddress}</td>
                         <td className={styles.td}>{transaction.blockConfirmationsCount}</td>
-                        <td className={styles.td}>{transaction.date}</td>
+                        <td className={styles.td}>{getFormattedDate(new Date(transaction.date))}</td>
                         <td className={styles.td}>{fromExponential(transaction.value)}</td>
                         <td className={styles.td}>{fromExponential(transaction.transactionFee)}</td>
                     </tr>
